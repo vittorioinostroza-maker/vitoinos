@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad | Privacy Policy - NeuroMatrix Vitoinos</title>
+  <meta name="description" content="Política de Privacidad oficial para la aplicación NeuroMatrix Vitoinos en Google Play Store.">
+  <style>
+    :root {
+      --bg-color: #0f172a;
+      --card-bg: #1e293b;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-hover: #0ea5e9;
+      --border-color: #334155;
+      --table-header: #0f172a;
+      --highlight: rgba(56, 189, 248, 0.1);
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.65;
+      padding: 24px 16px;
+    }
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 32px 28px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    }
+    header {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    .brand h1 {
+      font-size: 1.6rem;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .brand p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .lang-switcher {
+      display: flex;
+      gap: 8px;
+      background: var(--bg-color);
+      padding: 4px;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+    }
+    .lang-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .lang-btn.active {
+      background: var(--accent);
+      color: #0f172a;
+    }
+    .lang-btn:hover:not(.active) {
+      color: #ffffff;
+    }
+    .section-content {
+      display: none;
+    }
+    .section-content.active {
+      display: block;
+      animation: fadeIn 0.25s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    h2 {
+      font-size: 1.25rem;
+      color: var(--accent);
+      margin-top: 28px;
+      margin-bottom: 12px;
+      border-left: 3px solid var(--accent);
+      padding-left: 10px;
+    }
+    h3 {
+      font-size: 1.05rem;
+      color: #e2e8f0;
+      margin-top: 18px;
+      margin-bottom: 8px;
+    }
+    p {
+      margin-bottom: 14px;
+      color: #cbd5e1;
+      font-size: 0.96rem;
+    }
+    ul, ol {
+      margin-left: 20px;
+      margin-bottom: 16px;
+      color: #cbd5e1;
+      font-size: 0.95rem;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    strong {
+      color: #ffffff;
+    }
+    .table-container {
+      overflow-x: auto;
+      margin: 18px 0;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+    th, td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border-color);
+    }
+    th {
+      background-color: var(--table-header);
+      color: var(--accent);
+      font-weight: 600;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    .box-alert {
+      background: var(--highlight);
+      border-left: 4px solid var(--accent);
+      padding: 14px 16px;
+      border-radius: 4px;
+      margin: 20px 0;
+    }
+    .box-alert p {
+      margin-bottom: 0;
+      color: #e0f2fe;
+    }
+    footer {
+      border-top: 1px solid var(--border-color);
+      margin-top: 36px;
+      padding-top: 20px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    code {
+      background: #090d16;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+      font-size: 0.88em;
+      color: #38bdf8;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <div class="brand">
+      <h1>🧠 NeuroMatrix Vitoinos</h1>
+      <p>ID: <code>dev.vittorio.neuromatrix</code> • Versión Android</p>
+    </div>
+    <div class="lang-switcher">
+      <button class="lang-btn active" id="btn-es" onclick="switchLang('es')">Español</button>
+      <button class="lang-btn" id="btn-en" onclick="switchLang('en')">English</button>
+    </div>
+  </header>
+
+  <!-- ==================== SECCIÓN ESPAÑOL ==================== -->
+  <div id="content-es" class="section-content active">
+    <p><strong>Última actualización:</strong> 12 de noviembre de 2026</p>
+
+    <div class="box-alert">
+      <p><strong>Privacidad por Diseño:</strong> NeuroMatrix Vitoinos guarda todo tu progreso en tu propio teléfono (<code>user://progreso.json</code>). No operamos servidores de seguimiento personal ni solicitamos registro de cuentas.</p>
+    </div>
+
+    <h2>1. Ámbito y Principio Fundamental</h2>
+    <p>Esta Política de Privacidad rige para el juego <strong>NeuroMatrix Vitoinos</strong> en Android. Describe con total transparencia cómo se gestionan los datos técnicos requeridos para anuncios, micropagos y compatibilidad de software conforme a los estándares de Google Play, el RGPD europeo, CCPA/CPRA estadounidense y la normativa de protección de datos aplicable.</p>
+
+    <h2>2. Datos de Juego: Almacenamiento Estrictamente Local</h2>
+    <p>Toda tu actividad dentro del juego (puntuaciones, percentiles, nivel actual, monedas virtuales, apodo y racha diaria) permanece <strong>exclusivamente en tu dispositivo</strong>. Ni el desarrollador ni terceros no autorizados tienen acceso a dichos archivos ni a tu identidad personal.</p>
+
+    <h2>3. Servicios de Terceros y Datos Técnicos</h2>
+    <p>Para ofrecer un juego gratuito con micropagos opcionales, integramos los siguientes servicios de Google LLC:</p>
+    <ul>
+      <li><strong>Google AdMob (Publicidad):</strong> Muestra anuncios intersticiales y bonificados. Puede procesar tu Identificador de Publicidad (<code>AD_ID</code>), dirección IP aproximada (ciudad/país) y métricas de interacción. En regiones protegidas por el RGPD o leyes similares, se solicita tu consentimiento previo mediante la plataforma UMP oficial (IAB TCF v2.2), el cual puedes modificar en los ajustes en cualquier momento.</li>
+      <li><strong>Google Play Billing (Compras Integradas):</strong> Procesa transacciones seguras de paquetes de monedas o eliminación de publicidad. <em>El desarrollador jamás recibe datos de tus tarjetas o métodos de pago; todo es procesado confidencialmente por Google.</em></li>
+      <li><strong>Servicios del Sistema y Diagnóstico:</strong> Google Play recopila registros anónimos de fallos técnicos (ANR/crashes) para optimizar el rendimiento.</li>
+    </ul>
+
+    <h2>4. Permisos de Android y Justificación</h2>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Permiso</th>
+            <th>Justificación Técnica</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code></td>
+            <td>Carga de anuncios de AdMob y verificación de compras en Google Play.</td>
+          </tr>
+          <tr>
+            <td><code>POST_NOTIFICATIONS</code> (Android 13+)</td>
+            <td>Recordatorios diarios de racha generados estrictamente en el dispositivo (sin servidor remoto). Desactivable por el usuario.</td>
+          </tr>
+          <tr>
+            <td><code>RECEIVE_BOOT_COMPLETED</code></td>
+            <td>Permite reprogramar los temporizadores locales de alarma al reiniciar el teléfono.</td>
+          </tr>
+          <tr>
+            <td><code>VIBRATE</code></td>
+            <td>Retroalimentación háptica sensorial al interactuar con minijuegos y botones.</td>
+          </tr>
+          <tr>
+            <td><code>AD_ID</code></td>
+            <td>Requerido por AdMob en conformidad con las normas de Google Play.</td>
+          </tr>
+          <tr>
+            <td><code>BILLING</code></td>
+            <td>Pasarela de micropagos oficial de Google Play Billing.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>5. Audiencia Objetivo: Adultos y Jóvenes (13+ Años)</h2>
+    <p>La aplicación está dirigida a personas de <strong>13 años o más</strong>. No está dirigida intencionadamente a niños pequeños menores de 13 años y no forma parte del programa "Diseñado para Familias" de Google Play. El SDK de anuncios está configurado para respetar las directrices COPPA y RGPD cuando aplique.</p>
+
+    <h2>6. No Venta de Información y Eliminación de Datos</h2>
+    <ul>
+      <li><strong>No vendemos datos:</strong> No vendemos ni compartimos datos personales a terceros con fines comerciales ni de monetización de perfiles.</li>
+      <li><strong>Eliminación de datos:</strong> Puedes eliminar absolutamente todo tu historial y progreso en cualquier momento tocando <strong>"Ajustes &gt; Borrar progreso"</strong> dentro del juego, o simplemente desinstalando la aplicación.</li>
+    </ul>
+
+    <h2>7. Descargo de Responsabilidad de Salud y Cognición</h2>
+    <div class="box-alert">
+      <p><strong>Nota importante:</strong> NeuroMatrix Vitoinos es un juego de entretenimiento. No es un dispositivo médico, no evalúa un coeficiente intelectual (CI) con validez clínica, ni diagnostica, previene o trata enfermedades neurológicas o demencias.</p>
+    </div>
+
+    <h2>8. Contacto y Derechos de Privacidad</h2>
+    <p>Para ejercer tus derechos de acceso, rectificación, supresión o plantear dudas respecto a esta política, contacta al titular:</p>
+    <p><strong>Desarrollador:</strong> Vittorio (NeuroMatrix Team)<br>
+    <strong>Correo de contacto:</strong> <code>vitoinos.games@gmail.com</code><br>
+    <strong>Ubicación:</strong> Santiago, Chile</p>
+  </div>
+
+  <!-- ==================== SECCIÓN ENGLISH ==================== -->
+  <div id="content-en" class="section-content">
+    <p><strong>Last updated:</strong> November 12, 2026</p>
+
+    <div class="box-alert">
+      <p><strong>Privacy by Design:</strong> NeuroMatrix Vitoinos stores all your gameplay progress locally on your device (<code>user://progreso.json</code>). We do not operate external profiling servers or require account sign-ups.</p>
+    </div>
+
+    <h2>1. Scope and Core Principle</h2>
+    <p>This Privacy Policy applies to the Android game <strong>NeuroMatrix Vitoinos</strong>. It explains transparently how technical data required for ads, in-app purchases, and software compatibility are managed under Google Play policies, the GDPR, CCPA/CPRA, and relevant privacy legislation.</p>
+
+    <h2>2. Game Progression: Strictly Local Storage</h2>
+    <p>All gameplay activity (high scores, percentiles, current stage, virtual coins, nickname, and daily streak) is stored <strong>exclusively on your physical device</strong>. Neither the developer nor unauthorized third parties have access to your local files or personal identity.</p>
+
+    <h2>3. Third-Party Services and Technical Telemetry</h2>
+    <p>To support free access through optional in-app purchases and ads, we integrate standard Google LLC services:</p>
+    <ul>
+      <li><strong>Google AdMob (Advertising):</strong> Serves interstitial and rewarded video ads. May process your Android Advertising ID (<code>AD_ID</code>), coarse IP address (city/country level), and performance metrics. In regions governed by GDPR or similar laws, explicit consent is gathered via the official UMP framework (IAB TCF v2.2) and can be modified anytime in settings.</li>
+      <li><strong>Google Play Billing (In-App Purchases):</strong> Handles secure purchases of virtual coins and ad removal. <em>The developer never receives your credit card or financial credentials; all transactions are encrypted and processed by Google Play.</em></li>
+      <li><strong>Diagnostic Services:</strong> Anonymous crash reports (ANRs/crashes) collected by Google Play Console to maintain software performance.</li>
+    </ul>
+
+    <h2>4. Android Permissions and Purpose</h2>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Permission</th>
+            <th>Technical Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code></td>
+            <td>Loads AdMob ads and validates Google Play in-app purchases.</td>
+          </tr>
+          <tr>
+            <td><code>POST_NOTIFICATIONS</code> (Android 13+)</td>
+            <td>Schedules local daily streak reminders directly on the device (no remote push servers). Can be toggled off anytime.</td>
+          </tr>
+          <tr>
+            <td><code>RECEIVE_BOOT_COMPLETED</code></td>
+            <td>Reschedules local alarm timers after device reboots.</td>
+          </tr>
+          <tr>
+            <td><code>VIBRATE</code></td>
+            <td>Provides haptic tactile feedback for gameplay interactions and alerts.</td>
+          </tr>
+          <tr>
+            <td><code>AD_ID</code></td>
+            <td>Required for AdMob operations under Google Play policies.</td>
+          </tr>
+          <tr>
+            <td><code>BILLING</code></td>
+            <td>Official Google Play In-App Billing gateway.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>5. Target Audience: Ages 13 and Older</h2>
+    <p>The Application is intended for a general audience aged <strong>13 and older</strong>. It is not directed to children under 13 and is not enrolled in the Google Play "Designed for Families" program. Ad SDKs honor COPPA and GDPR tags where applicable.</p>
+
+    <h2>6. No Sale of Personal Data and Right to Deletion</h2>
+    <ul>
+      <li><strong>We Do Not Sell Data:</strong> We never sell, rent, or monetize your personal information to third parties.</li>
+      <li><strong>Data Deletion:</strong> You can completely wipe your game progress, coins, and settings at any time by tapping <strong>"Settings &gt; Reset Data"</strong> inside the game, or simply by uninstalling the application.</li>
+    </ul>
+
+    <h2>7. Medical and Cognitive Health Disclaimer</h2>
+    <div class="box-alert">
+      <p><strong>Important note:</strong> NeuroMatrix Vitoinos is an entertainment game. It is not a medical device, does not measure clinically validated IQ, and does not diagnose, treat, or prevent cognitive impairments or neurological disorders.</p>
+    </div>
+
+    <h2>8. Contact Information</h2>
+    <p>To exercise your privacy rights (access, erasure, rectification) or ask questions regarding this policy, please reach out to:</p>
+    <p><strong>Developer:</strong> Vittorio (NeuroMatrix Team)<br>
+    <strong>Contact Email:</strong> <code>vitoinos.games@gmail.com</code><br>
+    <strong>Location:</strong> Santiago, Chile</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 NeuroMatrix Vitoinos. All rights reserved. • Hosted statically without external trackers.</p>
+  </footer>
+</div>
+
+<script>
+  function switchLang(lang) {
+    var esContent = document.getElementById('content-es');
+    var enContent = document.getElementById('content-en');
+    var esBtn = document.getElementById('btn-es');
+    var enBtn = document.getElementById('btn-en');
+
+    if (lang === 'en') {
+      esContent.classList.remove('active');
+      enContent.classList.add('active');
+      esBtn.classList.remove('active');
+      enBtn.classList.add('active');
+      document.documentElement.lang = 'en';
+    } else {
+      enContent.classList.remove('active');
+      esContent.classList.add('active');
+      enBtn.classList.remove('active');
+      esBtn.classList.add('active');
+      document.documentElement.lang = 'es';
+    }
+  }
+</script>
+
+</body>
+</html>
+
