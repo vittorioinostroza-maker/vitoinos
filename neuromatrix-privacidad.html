@@ -194,9 +194,8 @@
     </div>
   </header>
 
-  <!-- ==================== SECCIÓN ESPAÑOL ==================== -->
   <div id="content-es" class="section-content active">
-    <p><strong>Última actualización:</strong> 14 de noviembre de 2026</p>
+    <p><strong>Última actualización:</strong> 24 de noviembre de 2026</p>
 
     <div class="box-alert">
       <p><strong>Privacidad por Diseño:</strong> NeuroMatrix Vitoinos guarda todo tu progreso en tu propio teléfono (<code>user://progreso.json</code>). No operamos servidores de seguimiento personal ni solicitamos registro de cuentas.</p>
@@ -206,7 +205,7 @@
     <p>Esta Política de Privacidad rige para el juego <strong>NeuroMatrix Vitoinos</strong> en Android. Describe con total transparencia cómo se gestionan los datos técnicos requeridos para anuncios, micropagos y compatibilidad de software conforme a los estándares de Google Play, el RGPD europeo, CCPA/CPRA estadounidense y la normativa de protección de datos aplicable.</p>
 
     <h2>2. Datos de Juego: Almacenamiento Estrictamente Local</h2>
-    <p>Toda tu actividad dentro del juego (puntuaciones, percentiles, nivel actual, monedas virtuales, apodo, edad declarada y racha diaria) permanece <strong>en tu dispositivo</strong> (salvo el ranking en línea opcional descrito más abajo, que está apagado por defecto). Ni el desarrollador ni terceros no autorizados tienen acceso a dichos archivos ni a tu identidad personal.</p>
+    <p>El juego guarda <strong>en tu dispositivo</strong> tus puntuaciones, percentiles, nivel, monedas virtuales, apodo, edad declarada y racha. El ranking opcional de la Copa y los eventos técnicos de medición se describen por separado más abajo.</p>
 
     <h2 id="ranking">2 bis. Ranking en línea de la Copa (opcional)</h2>
     <p>La Copa semanal funciona sin conexión y sin enviar datos. Si quieres compararte con otros jugadores, puedes activar «Participar en el ranking en línea» en la pantalla de la Copa. Está apagado por defecto y puedes desactivarlo cuando quieras; la Copa sigue funcionando igual.</p>
@@ -215,20 +214,25 @@
       <li>un identificador al azar creado en tu teléfono (no es tu nombre, tu correo ni un identificador de tu dispositivo o de publicidad);</li>
       <li>tu liga (Principiante, Intermedio, Avanzado o Experto) y los puntajes de tus pruebas de la Copa (día, habilidad, mejor puntaje e intentos);</li>
       <li>un nombre automático creado por la app, como «Zorro 482»;</li>
-      <li>el retrato del avatar que elegiste en la app, si creaste uno.</li>
+      <li>el identificador del retrato del catálogo, si corresponde, y la hora de envío.</li>
 </ul>
     <p><strong>No enviamos</strong> tu apodo, tu edad, tu correo, tu ubicación ni identificadores de tu dispositivo o de publicidad.</p>
-    <p><strong>Para qué:</strong> únicamente para mostrar el ranking semanal de tu liga. No usamos estos datos para publicidad ni para crear perfiles, y no los vendemos ni los compartimos con terceros. Los demás participantes de tu liga ven tu nombre automático, tu retrato y tu puntaje semanal.</p>
-    <p><strong>Dónde y cuánto tiempo:</strong> los datos viajan cifrados (HTTPS) a un servidor alojado en Cloudflare, que actúa como nuestro proveedor. Tu dirección IP se usa de forma momentánea para limitar abusos y no se guarda. Los datos del ranking se borran automáticamente cuando tienen más de 8 semanas.</p>
+    <p><strong>Para qué:</strong> únicamente para mostrar el ranking semanal de tu liga. No usamos estos datos para publicidad ni para crear perfiles, y no los vendemos. Cloudflare aloja el ranking. Los demás participantes de tu liga ven tu nombre automático, tu retrato y tu puntaje semanal.</p>
+    <p>Al consultar la clasificación, la app envía la semana, la liga y el identificador aleatorio persistente de jugador en la cabecera <code>X-Player-Id</code> para mostrar tu posición. La clasificación pública no muestra ese identificador.</p>
+    <p><strong>Dónde y cuánto tiempo:</strong> la app envía los datos mediante HTTPS. El servidor usa la dirección IP para calcular una clave de límite de solicitudes. Las tablas del ranking no guardan la IP. Para frenar registros abusivos, el servidor guarda además, durante unos tres días como máximo, un código calculado a partir de la IP, la fecha y una clave secreta del servidor (no la IP). El servidor elimina los registros del ranking por semanas tras aproximadamente ocho semanas.</p>
     <p><strong>Edad:</strong> el ranking en línea solo está disponible si la edad que indicaste en la app es de 14 años o más. Esa edad se usa solo dentro de tu teléfono y no se envía.</p>
-    <p><strong>Tus derechos:</strong> puedes dejar de participar apagando el interruptor. Puedes borrar tus datos del ranking en cualquier momento con el botón «Borrar mis datos del ranking» de la pantalla de la Copa: se eliminan de nuestro servidor y la app crea un identificador y un nombre nuevos. También puedes pedir el acceso, la rectificación o el borrado escribiendo a vitoinos.games@gmail.com e indicando la semana, tu liga y tu nombre automático, que aparece en la pantalla de la Copa. En Chile, estos derechos están reconocidos por la Ley N.º 19.628 sobre protección de la vida privada, modificada por la Ley N.º 21.719. La base de este tratamiento es tu consentimiento, que puedes retirar en cualquier momento.</p>
+    <p><strong>Tus derechos:</strong> puedes dejar de participar apagando el interruptor. Para pedir el borrado, usa «Borrar mis datos del ranking» en la Copa. La app retira el identificador anterior y, si sigues participando, genera uno nuevo. Si falla la solicitud, queda en cola para reintentar incluso si desactivas el ranking. Borrar el progreso local conserva las solicitudes de borrado que ya estén pendientes. El borrado del servidor se confirma cuando este responde correctamente. También puedes pedir el acceso, la rectificación o el borrado escribiendo a vitoinos.games@gmail.com e indicando la semana, tu liga y tu nombre automático, que aparece en la pantalla de la Copa. En Chile, estos derechos están reconocidos por la Ley N.º 19.628 sobre protección de la vida privada, modificada por la Ley N.º 21.719. La base de este tratamiento es tu consentimiento, que puedes retirar en cualquier momento.</p>
     <p>El ranking es solo una comparación: no entrega monedas ni premios y no está verificado contra trampas.</p>
 
     <h2>3. Servicios de Terceros y Datos Técnicos</h2>
     <p>Para ofrecer un juego gratuito con micropagos opcionales, integramos los siguientes servicios de Google LLC:</p>
     <ul>
-      <li><strong>Google AdMob (Publicidad):</strong> Muestra anuncios intersticiales y bonificados. Puede procesar tu Identificador de Publicidad (<code>AD_ID</code>), dirección IP aproximada (ciudad/país) y métricas de interacción. En regiones protegidas por el RGPD o leyes similares, se solicita tu consentimiento previo mediante la plataforma UMP oficial (IAB TCF v2.2), el cual puedes modificar en los ajustes en cualquier momento.</li>
-      <li><strong>Google Play Billing (Compras Integradas):</strong> Procesa transacciones seguras de los paquetes de monedas y de las compras «Todo», «Quitar anuncios» y «Progresión del perfil». <em>El desarrollador jamás recibe datos de tus tarjetas o métodos de pago; todo es procesado confidencialmente por Google.</em></li>
+      <li><strong>Google AdMob (Publicidad):</strong> Muestra anuncios intersticiales y anuncios con recompensa. El SDK puede procesar tu dirección IP para estimar la ubicación aproximada, identificadores publicitarios o técnicos, interacciones y diagnósticos para mostrar anuncios, analizarlos y prevenir fraude. En el flujo general, el SDK UMP consulta el estado de consentimiento antes de solicitar anuncios. Puede hacer esa consulta antes de que elijas y muestra el formulario cuando corresponde. Cuando está disponible, «Ajustes &gt; Privacidad de anuncios» abre las opciones de consentimiento de Google (UMP). Si un cambio retira el permiso de medición, la app desactiva Firebase Analytics.</li>
+      <li><strong>Firebase Analytics:</strong> Usamos Google Analytics para Firebase para medir el uso de la app. La recopilación empieza desactivada. En la Unión Europea, cuando se aplica el marco de consentimiento TCF, la medición requiere aceptar el almacenamiento en el dispositivo y la medición de audiencias en el formulario de Google. En otras regiones se puede activar si Google indica que ese formulario no es necesario. La medición permanece desactivada para menores de 13 años y si el perfil está incompleto.</li>
+      <li><strong>Eventos propios:</strong> La app registra cuatro eventos propios: finalización del test de nivel, primera partida completada, compra entregada y visualización de un anuncio con recompensa. Solo el evento de compra añade el identificador del producto. Estos eventos propios excluyen el apodo, la edad exacta, las respuestas, los puntajes, el precio y los datos de pago.</li>
+      <li><strong>Eventos automáticos:</strong> Cuando se habilita la medición, Firebase puede generar eventos automáticos, como la primera apertura, inicio de sesión de uso o interacción con la app, y procesar datos técnicos del dispositivo y un identificador de instancia de la app. La configuración de Firebase desactiva la recopilación del identificador de publicidad. AdMob se gestiona por separado.</li>
+      <li><strong>Google Play Install Referrer:</strong> Al habilitar la medición, el puente de la app también consulta la referencia de instalación al servicio Google Play Install Referrer. El puente descarta la respuesta, sin almacenarla ni enviarla en sus eventos propios. El SDK de Analytics puede medir la atribución de una instalación según su configuración.</li>
+      <li><strong>Google Play Billing (Compras Integradas):</strong> Google Play gestiona el pago de los paquetes de monedas y las compras «Todo», «Quitar anuncios» y «Progresión del perfil». La app consulta precios y usa el identificador del producto, el estado y el token de compra para confirmar, consumir o restaurar productos compatibles. Google Play gestiona las credenciales de pago y la app no recibe tus datos de tarjeta.</li>
       <li><strong>Servicios del Sistema y Diagnóstico:</strong> Google Play recopila registros anónimos de fallos técnicos (ANR/crashes) para optimizar el rendimiento.</li>
     </ul>
 
@@ -271,12 +275,12 @@
     </div>
 
     <h2>5. Audiencia Objetivo: Adultos y Jóvenes (13+ Años)</h2>
-    <p>La aplicación está dirigida a personas de <strong>13 años o más</strong>. Al comenzar se te pide tu edad (se guarda solo en tu teléfono) para configurar los anuncios: si indicas menos de 13 años, el SDK de anuncios se configura con tratamiento dirigido a menores y solo muestra anuncios no personalizados. No está dirigida intencionadamente a niños pequeños menores de 13 años y no forma parte del programa "Diseñado para Familias" de Google Play. El SDK de anuncios está configurado para respetar las directrices COPPA y RGPD cuando aplique.</p>
+    <p>La aplicación está dirigida a personas de <strong>13 años o más</strong>. Al comenzar se te pide tu edad (se guarda solo en tu teléfono) para configurar los anuncios: si indicas menos de 13 años o todavía no has indicado tu edad, Firebase Analytics permanece desactivado. La app pide anuncios no personalizados con indicadores de tratamiento infantil y no abre el formulario en ese flujo. El SDK puede procesar datos técnicos para prestar el servicio. No está dirigida intencionadamente a niños pequeños menores de 13 años y no forma parte del programa "Diseñado para Familias" de Google Play. El SDK de anuncios está configurado para respetar las directrices COPPA y RGPD cuando aplique.</p>
 
     <h2 id="eliminacion">6. No Venta de Información y Eliminación de Datos</h2>
     <ul>
-      <li><strong>No vendemos datos:</strong> No vendemos ni compartimos datos personales a terceros con fines comerciales ni de monetización de perfiles.</li>
-      <li><strong>Eliminación de datos:</strong> Puedes eliminar absolutamente todo tu historial y progreso en cualquier momento tocando <strong>"Ajustes &gt; Borrar mi progreso"</strong> dentro del juego (se borran niveles, racha, historial, apodo, edad y monedas; la aplicación te vuelve a pedir tu edad), o simplemente desinstalando la aplicación. Esto elimina todos los datos del juego, porque solo existen en tu teléfono. Las compras «Todo», «Quitar anuncios» y «Progresión del perfil» están ligadas a tu cuenta de Google Play y se recuperan con «Restaurar compras»; los paquetes de monedas ya consumidos no se recuperan.</li>
+      <li><strong>No vendemos datos:</strong> No vendemos tus datos personales ni los usamos para crear perfiles. Los proveedores descritos en la sección 3 (por ejemplo Google AdMob y Firebase) procesan datos técnicos para mostrar anuncios, medir el uso y prevenir fraude, según sus propias políticas.</li>
+      <li><strong>Eliminación de datos:</strong> «Ajustes &gt; Borrar mi progreso» borra el progreso y los datos locales del perfil y conserva los desbloqueos pagados «Todo», «Quitar anuncios» y «Progresión del perfil». El saldo de monedas se borra, incluidas las monedas compradas. Para borrar los resultados en línea de la Copa, solicita primero su borrado desde la <a href="#ranking">pantalla de la Copa</a>. Borrar los datos locales, desinstalar la app o retirar el consentimiento de medición no elimina automáticamente los datos que los proveedores hayan recibido antes.</li>
     </ul>
 
     <h2>7. Descargo de Responsabilidad de Salud y Cognición</h2>
@@ -285,15 +289,15 @@
     </div>
 
     <h2>8. Contacto y Derechos de Privacidad</h2>
+    <p>Al tocar «Comentarios» se abre tu aplicación de correo con el destinatario y la versión de la app en el asunto. Si envías el mensaje, recibimos tu dirección y el contenido que hayas decidido incluir.</p>
     <p>Para ejercer tus derechos de acceso, rectificación, supresión o plantear dudas respecto a esta política, contacta al titular:</p>
     <p><strong>Desarrollador:</strong> Vittorio (NeuroMatrix Team)<br>
     <strong>Correo de contacto:</strong> <code>vitoinos.games@gmail.com</code><br>
     <strong>Ubicación:</strong> Santiago, Chile</p>
   </div>
 
-  <!-- ==================== SECCIÓN ENGLISH ==================== -->
   <div id="content-en" class="section-content">
-    <p><strong>Last updated:</strong> November 14, 2026</p>
+    <p><strong>Last updated:</strong> November 24, 2026</p>
 
     <div class="box-alert">
       <p><strong>Privacy by Design:</strong> NeuroMatrix Vitoinos stores all your gameplay progress locally on your device (<code>user://progreso.json</code>). We do not operate external profiling servers or require account sign-ups.</p>
@@ -303,7 +307,7 @@
     <p>This Privacy Policy applies to the Android game <strong>NeuroMatrix Vitoinos</strong>. It explains transparently how technical data required for ads, in-app purchases, and software compatibility are managed under Google Play policies, the GDPR, CCPA/CPRA, and relevant privacy legislation.</p>
 
     <h2>2. Game Progression: Strictly Local Storage</h2>
-    <p>All gameplay activity (high scores, percentiles, current stage, virtual coins, nickname, declared age, and daily streak) is stored <strong>on your physical device</strong> (except for the optional online ranking described below, which is off by default). Neither the developer nor unauthorized third parties have access to your local files or personal identity.</p>
+    <p>The game stores your scores, percentiles, current stage, virtual coins, nickname, declared age and daily streak <strong>on your device</strong>. The optional Cup ranking and technical analytics events are described separately below.</p>
 
     <h2 id="ranking-en">2 bis. Online Cup ranking (optional)</h2>
     <p>The weekly Cup works offline and without sending any data. If you want to compare yourself with other players, you can turn on “Join the online ranking” on the Cup screen. It is off by default and you can turn it off at any time; the Cup keeps working the same.</p>
@@ -312,20 +316,25 @@
       <li>a random identifier created on your phone (it is not your name, your email, or a device or advertising identifier);</li>
       <li>your league (Beginner, Intermediate, Advanced or Expert) and your Cup test scores (day, skill, best score and attempts);</li>
       <li>an automatic name created by the app, such as “Fox 482”;</li>
-      <li>the avatar portrait you chose in the app, if you created one.</li>
+      <li>the catalogue portrait identifier, if applicable, and the send time.</li>
 </ul>
     <p><strong>We do not send</strong> your nickname, your age, your email, your location, or device or advertising identifiers.</p>
-    <p><strong>Purpose:</strong> only to show the weekly ranking of your league. We do not use this data for advertising or profiling, and we do not sell it or share it with third parties. Other participants in your league see your automatic name, your portrait and your weekly score.</p>
-    <p><strong>Where and for how long:</strong> the data travels encrypted (HTTPS) to a server hosted on Cloudflare, which acts as our service provider. Your IP address is used momentarily to limit abuse and is not stored. Ranking data is deleted automatically once it is more than 8 weeks old.</p>
+    <p><strong>Purpose:</strong> only to show the weekly ranking of your league. We do not use this data for advertising or profiling, and we do not sell it. Cloudflare hosts the ranking. Other participants in your league see your automatic name, your portrait and your weekly score.</p>
+    <p>When you check the leaderboard, the app sends the week, league and persistent random player identifier in the <code>X-Player-Id</code> header to show your position. The public leaderboard does not display that identifier.</p>
+    <p><strong>Where and for how long:</strong> the app sends the data over HTTPS. The server uses the IP address to calculate a rate limit key. The ranking tables do not store the IP address. To stop abusive sign-ups, the server also keeps, for about three days at most, a code calculated from the IP address, the date and a server secret key (not the IP address itself). The server removes ranking entries by week after approximately eight weeks.</p>
     <p><strong>Age:</strong> the online ranking is only available if the age you entered in the app is 14 or older. That age is used only inside your phone and is not sent.</p>
-    <p><strong>Your rights:</strong> you can stop participating by turning the switch off. You can delete your ranking data at any time with the “Delete my ranking data” button on the Cup screen: it is removed from our server and the app creates a new identifier and a new name. You can also request access, correction or deletion by writing to vitoinos.games@gmail.com and stating the week, your league and your automatic name, which is shown on the Cup screen. In Chile these rights are recognised by Law No. 19,628 on the protection of private life, as amended by Law No. 21,719. The basis for this processing is your consent, which you can withdraw at any time.</p>
+    <p><strong>Your rights:</strong> you can stop participating by turning the switch off. To request deletion, use “Delete my ranking data” on the Cup screen. The app retires the old identifier and assigns a new one if you keep participating. If the request fails, it remains queued for retry even if you turn the leaderboard off. Deleting local progress preserves deletion requests that are already pending. Server deletion is confirmed when the server responds successfully. You can also request access, correction or deletion by writing to vitoinos.games@gmail.com and stating the week, your league and your automatic name, which is shown on the Cup screen. In Chile these rights are recognised by Law No. 19,628 on the protection of private life, as amended by Law No. 21,719. The basis for this processing is your consent, which you can withdraw at any time.</p>
     <p>The ranking is only a comparison: it gives no coins or prizes and is not verified against cheating.</p>
 
     <h2>3. Third-Party Services and Technical Telemetry</h2>
     <p>To support free access through optional in-app purchases and ads, we integrate standard Google LLC services:</p>
     <ul>
-      <li><strong>Google AdMob (Advertising):</strong> Serves interstitial and rewarded video ads. May process your Android Advertising ID (<code>AD_ID</code>), coarse IP address (city/country level), and performance metrics. In regions governed by GDPR or similar laws, explicit consent is gathered via the official UMP framework (IAB TCF v2.2) and can be modified anytime in settings.</li>
-      <li><strong>Google Play Billing (In-App Purchases):</strong> Handles secure purchases of virtual coin packs and of the "Everything", "Remove ads" and "Profile progression" purchases. <em>The developer never receives your credit card or financial credentials; all transactions are encrypted and processed by Google Play.</em></li>
+      <li><strong>Google AdMob (Advertising):</strong> Serves interstitial and rewarded ads. Its SDK may process your IP address to estimate approximate location, advertising or other technical identifiers, interactions and diagnostics to serve and measure ads and prevent fraud. In the standard flow, the UMP SDK checks consent status before the app requests ads. It can make that check before you choose and shows the form when required. When available, “Settings &gt; Ad privacy” opens Google's consent options (UMP). If a change withdraws permission for measurement, the app disables Firebase Analytics.</li>
+      <li><strong>Firebase Analytics:</strong> We use Google Analytics for Firebase to measure app usage. Collection starts off. In the European Union, where the TCF consent framework applies, analytics requires consent to device storage and audience measurement in Google's form. In other regions, analytics may be enabled when Google indicates that the form is not required. Analytics stays off for players under 13 and when the profile is incomplete.</li>
+      <li><strong>Custom events:</strong> The app records four custom events: completion of the level test, completion of the first game, delivery of a purchase, and viewing a rewarded ad. Only the purchase event includes a product identifier. These custom events exclude your nickname, exact age, answers, scores, price and payment details.</li>
+      <li><strong>Automatic events:</strong> When analytics is enabled, Firebase may generate automatic events, such as first open, session start and app engagement, and process technical device information and an app instance identifier. The Firebase configuration disables advertising ID collection. AdMob is handled separately.</li>
+      <li><strong>Google Play Install Referrer:</strong> When analytics is enabled, the app's integration also requests the install referrer from Google Play Install Referrer. The integration discards the response without storing it or sending it in custom events. The Analytics SDK may measure install attribution according to its configuration.</li>
+      <li><strong>Google Play Billing (In-App Purchases):</strong> Google Play handles payment for virtual coin packs and the “Everything”, “Remove ads” and “Profile progression” purchases. The app checks prices and uses the product identifier, purchase status and purchase token to acknowledge, consume or restore eligible products. Google Play handles payment credentials and the app does not receive your card details.</li>
       <li><strong>Diagnostic Services:</strong> Anonymous crash reports (ANRs/crashes) collected by Google Play Console to maintain software performance.</li>
     </ul>
 
@@ -368,12 +377,12 @@
     </div>
 
     <h2>5. Target Audience: Ages 13 and Older</h2>
-    <p>The Application is intended for a general audience aged <strong>13 and older</strong>. At first launch you are asked for your age (stored only on your phone) to configure ads: if you enter an age under 13, the ads SDK is set to child-directed treatment and serves non-personalized ads only. It is not directed to children under 13 and is not enrolled in the Google Play "Designed for Families" program. Ad SDKs honor COPPA and GDPR tags where applicable.</p>
+    <p>The Application is intended for a general audience aged <strong>13 and older</strong>. At first launch you are asked for your age (stored only on your phone) to configure ads: if you enter an age under 13 or have not provided your age, Firebase Analytics stays off. The app requests non-personalized ads with child-treatment flags and does not open the form in that flow. The SDK may process technical data to provide the service. It is not directed to children under 13 and is not enrolled in the Google Play "Designed for Families" program. Ad SDKs honor COPPA and GDPR tags where applicable.</p>
 
     <h2 id="deletion">6. No Sale of Personal Data and Right to Deletion</h2>
     <ul>
-      <li><strong>We Do Not Sell Data:</strong> We never sell, rent, or monetize your personal information to third parties.</li>
-      <li><strong>Data Deletion:</strong> You can completely wipe your game progress, coins, and settings at any time by tapping <strong>"Settings &gt; Delete my progress"</strong> inside the game (this erases levels, streak, history, nickname, age and coins; the app then asks for your age again), or simply by uninstalling the application. This removes all game data, because it only exists on your phone. The "Everything", "Remove ads" and "Profile progression" purchases are tied to your Google Play account and come back with "Restore purchases"; coin packs already used cannot be restored.</li>
+      <li><strong>We Do Not Sell Data:</strong> We do not sell your personal data and we do not use it to build profiles. The providers described in section 3 (for example Google AdMob and Firebase) process technical data to show ads, measure usage and prevent fraud, under their own policies.</li>
+      <li><strong>Data Deletion:</strong> “Settings &gt; Delete my progress” clears local progress and profile data and preserves the paid “Everything,” “Remove ads,” and “Profile progression” unlocks. The coin balance is cleared, including purchased coins. To delete online Cup results, first request deletion from the <a href="#ranking-en">Cup screen</a>. Clearing local data, uninstalling the app or withdrawing analytics consent does not automatically remove data that providers received earlier.</li>
     </ul>
 
     <h2>7. Medical and Cognitive Health Disclaimer</h2>
@@ -382,6 +391,7 @@
     </div>
 
     <h2>8. Contact Information</h2>
+    <p>Tapping “Feedback” opens your email app with the recipient and the app version in the subject. If you send the message, we receive your email address and the content you choose to include.</p>
     <p>To exercise your privacy rights (access, erasure, rectification) or ask questions regarding this policy, please reach out to:</p>
     <p><strong>Developer:</strong> Vittorio (NeuroMatrix Team)<br>
     <strong>Contact Email:</strong> <code>vitoinos.games@gmail.com</code><br>
